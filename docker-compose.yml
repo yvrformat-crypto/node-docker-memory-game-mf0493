@@ -1,0 +1,9 @@
+services:
+  memory-game:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: memory-game:v1
+    container_name: memory-game-v1
+    ports:
+      - "4000:3000"
